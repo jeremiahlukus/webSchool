@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <div id="monitor">
+                        0
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button" value="+" onclick="store('add')">
+                        +
+                    </div>
+                </td>
+                <td>
+                    <div class="button" value="-" onclick="store('minus')">
+                        -
+                    </div>
+                </td>
+                <td>
+                    <div class="button" onclick="store(multiply)">
+                        *
+                    </div>
+                </td>
+                <td>
+                    <div class="button" onclick="store(divide)">
+                        /
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button"  value="7" onclick="store(7)">
+                        7
+                    </div>
+                </td>
+                <td>
+                    <div class="button" value="8" onclick="store(8)">
+                        8
+                    </div>
+                </td>
+                <td>
+                    <div class="button"  value="9" onclick="store(9)">
+                        9
+                    </div>
+                </td>
+                <td rowspan="2">
+                    <div class="button" id="height" onclick="clear()">
+                        C
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button"  onclick="store(4)">
+                        4
+                    </div>
+                </td>
+                <td>
+                    <div class="button"  onclick="store(5)">
+                        5
+                    </div>
+                </td>
+                <td>
+                    <div class="button"  onclick="store(6)">
+                        6
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button"  onclick="store(3)">
+                        3
+                    </div>
+                </td>
+                <td>
+                    <div class="button"  onclick="store(2)">
+                        2
+                    </div>
+                </td>
+                <td>
+                    <div class="button"  onclick="store(1)">
+                        1
+                    </div>
+                </td>
+                <td rowspan="2">
+                    <div class="button" id="height" onclick="equals()">
+                        =
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="button" onclick="store(0)">
+                        0
+                    </div>
+                </td>
+                <td>
+                    <div class="button" onclick="dot()">
+                        .
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
