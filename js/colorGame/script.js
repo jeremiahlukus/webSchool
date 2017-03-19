@@ -7,7 +7,8 @@ function changeColor() {
         squares[i].addEventListener("click", function(){
         var clickedColor = squares[i].style.background;
         if(clickedColor == ""){
-            changeGreen(i);
+         clickedColor = "red";
+         changeGreen(i);
         }
         if(clickedColor =="red"){
             changeGreen(i);
@@ -28,7 +29,7 @@ function changeGreen(index){
     indexv2 = index - 20; 
 
 
-    squares[index].style.background = "green";
+  //  squares[index].style.background = "green";
     squares[indexh1].style.background = "green";
     squares[indexh2].style.background = "green";
     squares[indexv1].style.background = "green";
@@ -43,7 +44,7 @@ function changeBlue(index){
     indexv2 = index - 20;
 
 
-    squares[index].style.background = "blue";
+//    squares[index].style.background = "blue";
     squares[indexh1].style.background = "blue";
     squares[indexh2].style.background = "blue";
     squares[indexv1].style.background = "blue";
@@ -59,7 +60,7 @@ function changeRed(index){
     indexv2 = index - 20;
 
 
-    squares[index].style.background = "red";
+   // squares[index].style.background = "red";
     squares[indexh1].style.background = "red";
     squares[indexh2].style.background = "red";
     squares[indexv1].style.background = "red";
